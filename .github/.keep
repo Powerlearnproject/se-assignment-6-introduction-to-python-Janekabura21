@@ -1,0 +1,127 @@
+Python Basics
+Python is a high-level, interpreted, general-purpose programming language. It is known for its simplicity, readability, and extensive libraries, making it popular in various domains.
+Key Features:
+•	Syntax that resembles natural language, promoting readability
+•	Dynamic typing, allowing for flexible data structures
+•	Object-oriented programming capabilities
+•	Extensive standard library for common tasks
+•	Wide community support and extensive documentation
+Use Cases:
+•	Data science and machine learning
+•	Web development
+•	Scripting and automation
+•	Scientific and numerical computing
+•	DevOps
+Installing Python
+Windows:
+1.	Download the Python installer from the official website.
+2.	Run the installer and follow the prompts.
+3.	Verify the installation by opening a terminal and typing(python --version)
+   
+Virtual Environment:
+1.	Install virtualenv:
+pip install virtualenv
+2.	Create a virtual environment:
+virtualenv my_env
+3.	Activate the environment:
+source my_env/bin/activate
+
+
+Python Syntax and Semantics
+print("Hello World!")
+Syntax Elements:
+•	print
+: Built-in function to display output
+•	("Hello World!")
+: String argument enclosed in parentheses
+•	;
+: Statement terminator
+Data Types and Variables
+Basic Data Types:
+•	Integer (int): Whole numbers (e.g., 4)
+•	Float (float): Decimal numbers (e.g., 3.14)
+•	Boolean (bool): True or False
+•	String (str): Sequence of characters (e.g., "Python")
+•	List (list): Ordered collection of elements
+•	Tuple (tuple): Immutable ordered collection
+•	Dictionary (dict): Unordered collection of key-value pairs
+Creating and Using Variables:
+my_int = 1
+my_float = 3.14
+my_bool = True
+my_string = "Hello"
+Control Structures
+Conditional Statements:
+•	if
+: Executes code if a condition is true
+•	else
+: Executes code if the condition is false
+if my_int > 5:
+    print("Greater than 5")
+else:
+    print("Not greater than 5")
+Loops:
+•	for
+: Iterates over a sequence of elements
+•	while
+: Iterates until a condition becomes false
+for i in range(5):
+    print(i)
+Functions in Python
+Functions are reusable blocks of code that can be called multiple times.
+def add(a, b):
+    return a + b
+
+result = add(1, 2)
+print(result)  # Output: 3
+Lists and Dictionaries
+Lists:
+•	Mutable ordered collections of elements
+•	Accessed using square brackets
+[]
+my_list = [1, 2, 3]
+print(my_list[1])  # Output: 2
+Dictionaries:
+•	Unordered collections of key-value pairs
+•	Accessed using curly braces
+{}
+and keys
+my_dict = {"name": "John", "age": 30}
+print(my_dict["name"])  # Output: John
+Exception Handling
+try, except, and finally:
+•	try
+: Executes code that may raise an exception
+•	except
+: Executes code when an exception occurs
+•	finally
+: Executes code regardless of whether an exception occurs
+try:
+    open_file = open("non_existing_file.txt", "r")
+except FileNotFoundError:
+    print("File not found")
+finally:
+    open_file.close()
+Modules and Packages
+Modules:
+•	Individual Python files containing functions, classes, and variables
+•	Imported using the
+import
+statement
+Packages:
+•	Collections of related modules stored in a hierarchy
+•	Imported using dot notation (e.g.,
+import package.module
+)
+Importing Modules:
+import math
+print(math.pi)  # Output: 3.141592653589793
+File I/O
+Reading Files:
+with open("file.txt", "r") as f:
+    content = f.read()
+Writing Files:
+with open("file2.txt", "w") as f:
+    f.write("Hello world!")
+
+
